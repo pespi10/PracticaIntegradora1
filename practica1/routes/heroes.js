@@ -7,4 +7,4 @@ router.get('/', heroeController.list);
 router.get('/detalle/id/:id', heroeController.detail);
 router.get('/bio/id/:id/:ok?', heroeController.bio);
 
-module.exports = router;
+module.exports = router
