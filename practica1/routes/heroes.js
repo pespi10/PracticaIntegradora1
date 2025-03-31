@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const heroeController = require('../controllers/heroeController');
+const heroesController = require('../controllers/heroeController');
+const heroes = require('../db/science')
 
-
-router.get('/', heroeController.list);
-router.get('/detalle/id/:id', heroeController.detail);
-router.get('/bio/id/:id/:ok?', heroeController.bio);
+router.get('/', heroesController.index);
+router.get('/detalle/id/:id', heroesController.detalle);
+router.get('/bio/id/:id/:ok?', heroesController.bio);
 
 module.exports = router

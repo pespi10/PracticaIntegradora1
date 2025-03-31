@@ -1,4 +1,4 @@
-lista:	[
+const cientificos = {lista:	[
 	{
 		id: 1,
 		nombre: "Ada Lovelace",
@@ -60,4 +60,6 @@ lista:	[
 		pais: "Estados Unidos",
 		resenia: "Creador de NodeJS. Ryan asistió a un colegio comunitario en San Diego y luego se transfirió a UC San Diego, donde estudió matemáticas. Luego asistió a la escuela de posgrado de Matemáticas en la Universidad de Rochester, donde estudió topología algebraica, que una vez encontró \"muy abstracta y hermosa\" durante un par de años, pero luego se aburrió porque \"no era tan aplicable a la realidad vida."
 	}
-	]
+	]}
+
+module.exports = cientificos
