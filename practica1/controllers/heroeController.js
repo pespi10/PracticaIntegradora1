@@ -10,13 +10,19 @@ const controller = {
         res.render('heroes',{mensaje:nombres})
     },
     detalle:function(req,res){
-        const id = req.params.id
-        heroes.lista(id-1).nombre
-        const mensaje = `Hola, mi nombre es ${heroes.lista[id-1].nombre} y soy ${heroes.lista[id-1].profesion}`
-        res.redner('heroes',
-            {mensaje:mensaje})
+        let id = req.params.id
+        let mensaje = `Hola, mi nombre es ${heroes.lista[id-1].nombre} y soy ${heroes.lista[id-1].profesion}`
+        res.render('heroes',{mensaje:mensaje})
     },
     bio: function(req,res){
+        const id = req.params.id
+        const ok = req.params.ok
+        if(ok==true){
+            let nombre = heroes.id.nombre
+            let resena = heroes.id.resena
+        }
+        res.render('heroes',{mensaje:nombre,resena})
+
 
     }
 
